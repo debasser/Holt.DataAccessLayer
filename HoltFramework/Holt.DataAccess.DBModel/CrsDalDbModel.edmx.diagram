@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1904c70861b04acfa64a317be3d1c50c" Name="Diagram1">
+        <EntityTypeShape EntityType="CrsDalDbModel.ComponentImpl" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrsDalDbModel.CustomerImpl" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrsDalDbModel.JobImpl" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="CrsDalDbModel.FK_Components_Jobs" ManuallyRouted="false" />
+        <AssociationConnector Association="CrsDalDbModel.FK_Jobs_Customers" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CrsDalDbModel.GroupImpl" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CrsDalDbModel.NotificationImpl" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CrsDalDbModel.UserImpl" Width="1.5" PointX="6" PointY="3.875" />
+        <EntityTypeShape EntityType="CrsDalDbModel.UserStatusImpl" Width="1.5" PointX="3.75" PointY="4.125" />
+        <AssociationConnector Association="CrsDalDbModel.FK_Users_Status" />
+        <AssociationConnector Association="CrsDalDbModel.GroupsInNotification" />
+        <AssociationConnector Association="CrsDalDbModel.UsersInGroups" />
+        <AssociationConnector Association="CrsDalDbModel.UsersInNotification" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
